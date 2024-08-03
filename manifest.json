@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Reddit Recent Blocker",
+    "version": "1.0",
+    "description": "Prevents Reddit from creating recent-subreddit-stores local storage item",
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "dist/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://www.reddit.com*"],
+            "js": ["dist/content.js"]
+        }
+    ],
+    "host_permission": [
+        "*://www.reddit.com/*"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "reddit-local-storage-blocker",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.269",
+        "typescript": "^5.5.0"
+    }
+}
